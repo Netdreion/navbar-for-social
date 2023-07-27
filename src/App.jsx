@@ -1,17 +1,13 @@
 import { useState } from "react";
-
+import Navbar from "./Navbar";
 import "./App.css";
 
-function Navbar() {
+function App() {
   return (
-    <nav>
-      <div className="nav-center">
-        <div className="nav-header"></div>
-        <div className="links-container show-container"></div>
-        <ul className='="social-icons'></ul>
-      </div>
-    </nav>
+    <>
+      <Navbar />
+    </>
   );
 }
 
-export default Navbar;
+export default App;
