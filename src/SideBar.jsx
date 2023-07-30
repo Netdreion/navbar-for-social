@@ -1,7 +1,6 @@
 import React from "react";
 
 const SideBar = () => {
-  x;
   return (
     <div className="links-container show-container">
       <ul className="links">
@@ -21,4 +20,4 @@ const SideBar = () => {
     </div>
   );
 };
-export default SIdeBar;
+export default SideBar;
