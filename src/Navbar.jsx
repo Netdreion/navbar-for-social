@@ -1,7 +1,8 @@
 import React from "react";
 import reactLogo from "./assets/react.svg";
 
-import { FaTwitter, FaBars } from "react-icons/fa"; // Assuming "fa" is the correct package for the FontAwesome icons
+import { FaTwitter, FaBars } from "react-icons/fa";
+import Links from "./Data";
 
 import "./App.css";
 
@@ -39,6 +40,17 @@ function Navbar() {
           </li>
         </ul>
       </div>
+      <ul>
+        {Links.map((links) => {
+          const { id, url, text } = links;
+          return (
+            <li key={id}>
+              <a>{url}</a>
+              {text}
+            </li>
+          );
+        })}
+      </ul>
     </nav>
   );
 }
