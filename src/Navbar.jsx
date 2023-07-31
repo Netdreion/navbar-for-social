@@ -14,7 +14,7 @@ function Navbar() {
       <div className="nav-center">
         <div className="nav-header">
           <img src={reactLogo} alt="logo" />
-          <button className="nav-toggle" onClick={() => SetShown(true)}>
+          <button className="nav-toggle" onClick={() => SetShown(!shown)}>
             <FaBars />
           </button>
         </div>
